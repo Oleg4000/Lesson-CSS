@@ -1,0 +1,27 @@
+body{
+    background-color: aliceblue;
+}
+
+/* селектор{ //параметер для елемента до якого звертаємся
+    властивість:значення;
+    властивість:значення;
+    властивість:значення;
+} */
+
+h2,h1{
+    color: rgb(111, 0, 255);
+    text-align: center;
+    font-weight:100;
+    font-style: italic;
+    font-size: 25px;
+}
+.text{
+    font-weight:900;
+}
+.charter{
+    color:blue;
+}
+#begin{
+    color:orange;
+    font-weight:bold;
+}
