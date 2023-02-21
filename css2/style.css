@@ -1,8 +1,8 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: aliceblue;
+body {
+  background-color: aliceblue;
 }
 
 /* селектор{ //параметер для елемента до якого звертаємся
@@ -11,46 +11,70 @@ body{
     властивість:значення;
 } */
 
-h2,h1{
-    color: rgb(111, 0, 255);
-    text-align: center;
-    font-weight:100;
-    font-style: italic;
-    font-size: 25px;
+h2,
+h1 {
+  color: rgb(111, 0, 255);
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 25px;
 }
-.text{
-    font-weight:900;
+.text {
+  font-weight: 900;
 }
-.charter{
-    color:blue;
+.charter {
+  color: blue;
 }
-#begin{
-    color:orange;
-    font-weight:bold;
+#begin {
+  color: orange;
+  font-weight: bold;
 }
-.box{
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    background-color:blue;
-    padding: 20px;
-    /* border-width: 3px;
+.box {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  padding: 20px;
+  /* border-width: 3px;
     border-style: solid;
     border-color: black; */
-    border: 3px solid black;
-    margin: 25px;
+  border: 3px solid black;
+  margin: 25px;
+  z-index: 3;
 }
 /* блочні
 рядкові
 рядково-блочні */
 /*рядкові*/
-a{
-    padding: 20px;
-    margin: 20px;
+a {
+  padding: 20px;
+  margin: 20px;
 }
 
-img{
-display: block;
-margin: 0 auto;
-width: 500px;
+img {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+nav {
+  position: inherit; /*inherit-для наслідування властивостей батьківського елемента*/
+  left: 30px;
+  top: 100px;
+  /*fixed-приклеїть тільки до конкретного місця*/
+  /*absolute-можна рухати тільки в серидині блоку бредова штука*/
+  /*relative-дозволяє рухати елементи по сторінці за допомогою top-вниз,bottom-в верх, right,left*/
+  /*top-вниз,bottom-в верх, right,left*/
+}
+.example {
+  background-color: bisque;
+}
+.example1 {
+  position: relative;
+}
+.red {
+  background-color: red;
+  position: absolute;
+  left: 130px;
+  z-index: 4;
 }
