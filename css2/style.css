@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: aliceblue;
 }
@@ -26,6 +29,7 @@ h2,h1{
     font-weight:bold;
 }
 .box{
+    display: inline-block;
     width: 300px;
     height: 300px;
     background-color:blue;
@@ -35,4 +39,18 @@ h2,h1{
     border-color: black; */
     border: 3px solid black;
     margin: 25px;
+}
+/* блочні
+рядкові
+рядково-блочні */
+/*рядкові*/
+a{
+    padding: 20px;
+    margin: 20px;
+}
+
+img{
+display: block;
+margin: 0 auto;
+width: 500px;
 }
